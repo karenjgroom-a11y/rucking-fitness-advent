@@ -1,0 +1,1 @@
+Replace the existing index.html and add netlify/functions/advent-date.js in your existing GitHub repository. KEEP the existing advent-picture.jpg and all other files. Netlify functions directory must be netlify/functions. Verify live deployment before sharing the calendar. The calendar fails closed if date service unavailable.
