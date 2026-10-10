@@ -1,7 +1,10 @@
-Rucking Fitness Advent Calendar - corrected 2026 release
+Rucking Fitness Advent Calendar — browser-tested corrected release (10 October 2026)
 
-Upload all contents of this folder to the ROOT of the existing GitHub repository, keeping the netlify/functions folder structure. Netlify: publish directory . and functions directory netlify/functions. Do not upload until you are ready to replace the live site.
+Contains index.html, advent-picture.jpg, and netlify/functions/advent-date.js.
+Upload these files into the existing GitHub repository, retaining the netlify/functions folder structure.
 
-Includes the original calendar picture and original artwork/animations. All 24 doors remain visible; Door 1 is available as a test run before 1 December 2026 (UK time). Preview stamps and mince pies are cleared when December begins. On each day 1-24 December, that door and all earlier doors are available. After 24 December, all remain available. Date service failure locks doors until it recovers. Progress is stored in each browser localStorage.
+Door 1 is available as a test before December. Preview stamps remain during the test period and are cleared on first successful December date check. Doors 1–24 unlock by UK calendar date; later doors remain locked until their day.
 
-NOTE: A browser-only app cannot prevent a technically skilled person from altering localStorage or JavaScript. The server date is authoritative for normal use.
+Automated checks completed: 24-door rendering, preview and December unlock counts, Door 1 modal/stamp, pie consumption, locked-door Grinch penalty, Grinch advance/retreat, preview reset, Christmas Eve modal, animation startup, date-service failure locking, JavaScript syntax and server date boundaries. No browser JavaScript errors in those checks.
+
+Not fully verified: animation appearance through its complete duration, actual persistence across browser restarts, real Netlify production deployment. No change to live site has been made by creating this ZIP.

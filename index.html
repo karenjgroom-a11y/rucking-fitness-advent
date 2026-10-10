@@ -178,7 +178,7 @@ gr.style.transform="translateX("+Math.round(pos*300)+"px)";
 var m=document.getElementById("msg");
 m.textContent=pre()?cd():missed>=6?"The Grinch has caught you! Stamp a missed door to push him back.":missed>0?"The Grinch is "+(6-missed)+" missed door"+(6-missed>1?"s":"")+" away. Catch up to push him back.":"The Grinch is nowhere near. Keep stamping!"}
 function clearPreviewData(){
- if(!state.test)return;
+ if(!state.test||serverPre)return;
  var D=Date.UTC(2026,11,1),changed=false;
  for(var k=1;k<=24;k++){if(state[k]&&state[k]<D){delete state[k];changed=true}}
  state.eaten=0;state.cheat=0;state.test=false;state.join=1;
